@@ -1,0 +1,13 @@
+{
+  "name": "alder-brisco",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "flexboxgrid-sass": "^8.0.5"
+  }
+}

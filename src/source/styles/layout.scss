@@ -1,0 +1,29 @@
+.container {
+    @include flexbox();
+    @include flex-direction(column);
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+main {
+    margin-bottom: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: $screen-md) {
+    .container {
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-flow(row wrap);
+        margin: $gutter-mobile auto 0;
+
+        & > * {
+            @include flex(1 42%);
+        }
+    }
+}

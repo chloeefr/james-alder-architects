@@ -1,0 +1,31 @@
+footer {
+    margin: 0 $gutter-mobile $gutter*3;
+    @include flexbox();
+
+    li,
+    li a {
+        font-weight: 300;
+    }
+
+    .contact-row {
+        @include flex-direction(column);
+        margin-bottom: $spacing-m;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+        border-top: 1px solid $primary-color;
+        margin: 0 $gutter;
+        
+        h3 {
+            width: 100%;
+        }
+
+        .contact-row {
+            @include align-items(baseline);
+            @include flex-flow(row wrap);
+            @include justify-content(space-between);
+            margin-bottom: 0;
+            width: 83%;
+        }
+    }
+}

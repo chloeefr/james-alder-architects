@@ -1,0 +1,22 @@
+.main-content {
+    border-bottom: 1px solid $primary-color;
+    margin: 0 $gutter-mobile $spacing-m;
+    padding-bottom: 50px;
+
+    p {
+        font-size: rem-calc(22);
+        line-height: rem-calc(28);
+    }
+
+    @media only screen and (min-width: $screen-md) {
+        border-bottom: none;
+        margin: 0 $gutter 0 0;
+        max-width: 100%;
+        padding-bottom: 65px;
+
+        p {
+            letter-spacing: rem-calc(0.6);
+            line-height: rem-calc(27);
+        }
+    }
+}

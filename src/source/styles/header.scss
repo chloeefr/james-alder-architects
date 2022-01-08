@@ -1,0 +1,10 @@
+header {
+    margin: 0 $gutter-mobile;
+    .row {
+        @include flex-direction(column);
+    }
+
+    @media only screen and (min-width: $screen-md) {
+        margin: 0 0 0 $gutter;
+    }
+}
